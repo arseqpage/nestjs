@@ -37,6 +37,12 @@ export class TaskService {
       id,
       title: dto.title,
       isCompleted: dto.isCompleted ?? false,
+      description: dto.description ?? '',
+      priority: dto.priority,
+      tags: dto.tags ?? [],
+      password: dto.password,
+      websiteUrl: dto.websiteUrl,
+      userId: dto.userId,
     };
 
     this.tasks.push(newTask);
