@@ -6,6 +6,8 @@ import { AppService } from './app.service';
 import { TaskModule } from './task/task.module';
 import { MovieModule } from './movie/movie.module';
 import { getTypeOrmConfig } from './config/type-orm.config';
+import { ReviewModule } from './review/review.module';
+import { ActorModule } from './actor/actor.module';
 
 @Module({
   controllers: [AppController],
@@ -21,6 +23,8 @@ import { getTypeOrmConfig } from './config/type-orm.config';
     }),
     TaskModule,
     MovieModule,
+    ReviewModule,
+    ActorModule,
   ],
 })
 export class AppModule {}
