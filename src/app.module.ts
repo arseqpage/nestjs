@@ -6,6 +6,7 @@ import { TaskModule } from './task/task.module';
 import { MovieModule } from './movie/movie.module';
 import { ReviewModule } from './review/review.module';
 import { ActorModule } from './actor/actor.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
   controllers: [AppController],
@@ -14,8 +15,9 @@ import { ActorModule } from './actor/actor.module';
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    TaskModule,
+    PrismaModule,
     MovieModule,
+    TaskModule,
     ReviewModule,
     ActorModule,
   ],
