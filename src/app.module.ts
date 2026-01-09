@@ -8,6 +8,7 @@ import { ReviewModule } from './review/review.module';
 import { ActorModule } from './actor/actor.module';
 import { PrismaModule } from './prisma/prisma.module';
 // import { LoggingMiddleware } from './common/middlewares/logger.middleware';
+import { PhoneModule } from './phone/phone.module';
 
 @Module({
   controllers: [AppController],
@@ -21,6 +22,7 @@ import { PrismaModule } from './prisma/prisma.module';
     TaskModule,
     ReviewModule,
     ActorModule,
+    PhoneModule,
   ],
 })
 export class AppModule {}
